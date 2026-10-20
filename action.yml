@@ -1,0 +1,17 @@
+name: Custom JavaScript Greeting
+description: A custom JavaScript GitHub Action that prints a greeting
+author: Mustafa Tahir
+
+inputs:
+  name:
+    description: Name of the person to greet
+    required: false
+    default: GitHub Actions Student
+
+outputs:
+  greeting:
+    description: Greeting message
+
+runs:
+  using: node20
+  main: dist/index.js

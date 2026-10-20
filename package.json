@@ -1,0 +1,21 @@
+{
+  "name": "github-actions-custom-action",
+  "version": "1.0.0",
+  "description": "Custom JavaScript GitHub Action",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "keywords": [
+    "github-actions"
+  ],
+  "author": "Mustafa Tahir",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  }
+}
